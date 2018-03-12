@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time:  6 март 2018 в 20:59
+-- Generation Time: 12 март 2018 в 20:36
 -- Версия на сървъра: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -25,13 +25,25 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Структура на таблица `dictonary`
+-- Структура на таблица `bg_dictonary`
 --
 
-CREATE TABLE `dictonary` (
-  `word_id` int(11) NOT NULL,
-  `word` varchar(20) NOT NULL,
-  `hint` varchar(255) DEFAULT NULL
+CREATE TABLE `bg_dictonary` (
+  `bgword_id` int(11) NOT NULL,
+  `bgword` varchar(20) NOT NULL,
+  `bghint` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура на таблица `en_dictonary`
+--
+
+CREATE TABLE `en_dictonary` (
+  `enword_id` int(11) NOT NULL,
+  `enword` varchar(20) NOT NULL,
+  `enhint` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -63,10 +75,16 @@ CREATE TABLE `users` (
 --
 
 --
--- Indexes for table `dictonary`
+-- Indexes for table `bg_dictonary`
 --
-ALTER TABLE `dictonary`
-  ADD PRIMARY KEY (`word_id`);
+ALTER TABLE `bg_dictonary`
+  ADD PRIMARY KEY (`bgword_id`);
+
+--
+-- Indexes for table `en_dictonary`
+--
+ALTER TABLE `en_dictonary`
+  ADD PRIMARY KEY (`enword_id`);
 
 --
 -- Indexes for table `games_history`
@@ -85,10 +103,16 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `dictonary`
+-- AUTO_INCREMENT for table `bg_dictonary`
 --
-ALTER TABLE `dictonary`
-  MODIFY `word_id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `bg_dictonary`
+  MODIFY `bgword_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `en_dictonary`
+--
+ALTER TABLE `en_dictonary`
+  MODIFY `enword_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `games_history`
