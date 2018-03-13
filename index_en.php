@@ -1,17 +1,26 @@
 <!DOCTYPE html><html>
   <head>
     <title></title>
-      <style>
-        .vcenter {
+    <style>
+    .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+    }
 
-        }
-      </style>
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    .nav > li {
+      display: inline-block!important;
+    }
+    </style>
     <script src="js/jquery-3.3.1.min.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <script src="js/bootstrap.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -19,17 +28,28 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
+      <ul class="nav navbar-left">
+        <li>
+          <a href="index.php">HOME</a>
+        </li>
+        <li>
+          <button type="button" onclick="location.href = 'index_bg.php'" name="bg" class="btn btn-default" aria-label="Left Align">
+          <img src="img/bg.png" alt="bg_site_version">
+          </button>
+        </li>
+        <li>
+          <button type="button" onclick="location.href = 'index_en.php'" name="en" class="btn btn-default" aria-label="Left Align">
+          <img src="img/en.png" alt="en_site_version">
+          </button>
+        </li>
+      </ul>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="active"><a class="navbar-brand" href="#">YOUR POINTS:</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
       </ul>
     </div>
   </div>
@@ -37,27 +57,29 @@
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>Welcome to hanging game!</h1>
-    <h3>Please select you language</h3>
+    <h1>Play "Hang man game!"</h1>
+    <h3>game with words</h3>
     <hr>
-    <button type="button" name="bg" class="btn btn-default" aria-label="Left Align">
-    <img src="img/bg.png" alt="bg_site_version">
-    </button>
-
-    <button type="button" name="en" class="btn btn-default" aria-label="Left Align">
-    <img src="img/en.png" alt="en_site_version">
-    </button>
-  </div>
-</div>
-
-<div class="container-fluid bg-3 text-center">
-  <h3>Some of my Work</h3><br>
-  <div class="row">
+    <div class="col-lg-6">
+      <h3>Game number: </h3>
+      <a href="https://placeholder.com"><img src="http://via.placeholder.com/450x450"></a>
+    </div>
+    <div class="col-lg-6">
+      <h3>My ranking</h3>
+      <a href="https://placeholder.com"><img src="http://via.placeholder.com/450x450"></a>
+    </div>
   </div>
 </div>
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <div class="row">
+    <div class="jumbotron">
+      <div class="col-lg-12" align="center">
+        <h3>Hang man game!</h3>
+        <p>Developed by: Dimitar Gospodinov & Stanislav Balev</p>
+      </div>
+    </div>
+  </div>
 </footer>
 
 
