@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 12 март 2018 в 20:36
+-- Generation Time: 13 март 2018 в 19:21
 -- Версия на сървъра: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -33,6 +33,29 @@ CREATE TABLE `bg_dictonary` (
   `bgword` varchar(20) NOT NULL,
   `bghint` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Схема на данните от таблица `bg_dictonary`
+--
+
+INSERT INTO `bg_dictonary` (`bgword_id`, `bgword`, `bghint`) VALUES
+(1, 'ПЛОЩАД', 'МЕГДАН'),
+(2, 'ПАРАЛЕЛЕПИПЕД', 'ПРИЗМА'),
+(3, 'ЗАКОН', 'ПРАВИЛНИК'),
+(4, 'ВЕСТНИК', 'ПРЕСА'),
+(5, 'ТЕЛЕВИЗИЯ', 'МЕДИЯ'),
+(6, 'ИНТЕРНЕТ', 'МРЕЖА'),
+(7, 'ПРОТЕСТ', 'НЕПОДЧИНЕНИЕ'),
+(8, 'ЛЕКАР', 'ДОКТОР'),
+(9, 'ПРЕПОДАВАТЕЛ', 'ЛЕКТОР'),
+(10, 'ЦИТАДЕЛА', 'КРЕПОСТ'),
+(11, 'ЕНЦИКЛОПЕДИЯ', 'СПРАВОЧНИК'),
+(12, 'АПАРТАМЕНТ', 'ЖИЛИЩЕ'),
+(13, 'ГРЪМОТЕВИЦА', 'СВЕТКАВИЦА'),
+(14, 'ФЕЛДФЕБЕЛ', 'СТАРШИНА'),
+(15, 'КОРЕСПОНДЕНЦИЯ', 'ПОЩА'),
+(16, 'ВИАДУКТ', 'МОСТ'),
+(17, 'ТРАНШЕЯ', 'ОКОП');
 
 -- --------------------------------------------------------
 
@@ -106,7 +129,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `bg_dictonary`
 --
 ALTER TABLE `bg_dictonary`
-  MODIFY `bgword_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `bgword_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `en_dictonary`
