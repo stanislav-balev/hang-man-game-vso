@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 13 март 2018 в 19:21
+-- Generation Time: 13 март 2018 в 22:22
 -- Версия на сървъра: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -68,6 +68,27 @@ CREATE TABLE `en_dictonary` (
   `enword` varchar(20) NOT NULL,
   `enhint` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Схема на данните от таблица `en_dictonary`
+--
+
+INSERT INTO `en_dictonary` (`enword_id`, `enword`, `enhint`) VALUES
+(1, 'ORANGE', 'FRUIT'),
+(2, 'MIRROR', 'ON THE WALL'),
+(3, 'SUITCASE', 'BAG'),
+(4, 'FURNITURE', 'JOINERY'),
+(5, 'PROCESSOR', 'INTEL'),
+(6, 'UNIVERSITY', 'VARSITY'),
+(7, 'PRESIDENT', 'ABRAHAM LINKOLN'),
+(8, 'TIRANOZAVER', 'REX'),
+(9, 'LANDSCAPE', 'SCENERY'),
+(10, 'ELEPHANT', 'JUMBO'),
+(11, 'PANTER', 'JAGUAR'),
+(12, 'CATERPILLAR', 'CANKERWORM'),
+(13, 'HURRICANE', 'STORM'),
+(14, 'CONTINENT', 'MAINLAND'),
+(15, 'FOREIGNER', 'STRANGER');
 
 -- --------------------------------------------------------
 
@@ -135,7 +156,7 @@ ALTER TABLE `bg_dictonary`
 -- AUTO_INCREMENT for table `en_dictonary`
 --
 ALTER TABLE `en_dictonary`
-  MODIFY `enword_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `enword_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `games_history`
