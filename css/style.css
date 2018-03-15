@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'JACKPORT_COLLEGE_NCV';
+    src: url('JACKPORTCOLLEGENCV.woff2') format('woff2'),
+        url('JACKPORTCOLLEGENCV.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background: #2a281c;
+background: -moz-linear-gradient(left, #2a281c 0%, #d6d6d6 30%, #c9c9c9 70%, #2a281c 100%);
+background: -webkit-linear-gradient(left, #2a281c 0%,#d6d6d6 30%,#c9c9c9 70%,#2a281c 100%);
+background: linear-gradient(to right, #2a281c 0%,#d6d6d6 30%,#c9c9c9 70%,#2a281c 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a281c', endColorstr='#2a281c',GradientType=1 );
+}
+#game-board {
+	background: #FFF;
+	max-width: 600px;
+	min-width: 360px;
+	margin: 0 auto;
+	padding: 15px;
+	border: 1px solid;
+    padding: 10px;
+	font-size: 50px;
+    box-shadow: 0px 1px 1px 1px #2a281c;
+	font-family: 'JACKPORT_COLLEGE_NCV';
+}
+#stats {
+	background: #ECECEC;
+	text-align: center;
+}
+#stats .col h3 {
+	margin-bottom: 5px;
+}
+#stats .col p {
+	margin-top: 5px;
+}
+#word {
+	text-align: center;
+	background: #FFF;
+	padding: 15px;
+}
+#actions {
+	background: #EEE;
+	text-align: center;
+	height: 32px;
+	padding-top: 15px;
+	margin-top: 8px;
+}
+#actions .btn-action {
+	background: #A0A0A0;
+	float: none;
+}
+#actions .btn-action:hover {
+	background: #808080;
+}
+#error {
+	background: #FB5B5B;
+	margin-top: 5px;
+	padding: 3px;
+	color: #FFF;
+	font-size: 20px;
+	text-align: center;
+}
+#error p {
+	margin: 10px 20px;
+}
+#success {
+	background: #1E8E1E;
+	margin-top: 5px;
+	padding: 3px;
+	color: #FFF;
+	font-size: 20px;
+	text-align: center;
+}
+#success p {
+	margin: 10px 20px;
+}
+#success .btn {
+	float: none;
+}
+.field {
+	width: 100%;
+	padding: 5px;
+}
+.btn {
+	float: right;
+	border: none;
+	background: #2a281c;
+	padding: 7px 30px;
+	margin: 5px;
+	cursor: pointer;
+	color: #FFF;
+	font-size: 30px;
+	font-family: 'JACKPORT_COLLEGE_NCV';
+}
+.btn:hover {
+	background: #E63232;
+}
+.wide-btn {
+	float: none;
+	display: block;
+	text-align: center;
+	font-size: 3.8vw;
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+.col30 {
+	text-align: center;
+	border: 1px solid #CCC;
+	padding: 5px 0;
+	width: 30%;
+	display: inline-table;
+	font-family: 'JACKPORT_COLLEGE_NCV';
+}
+.col50 {
+	width: 45%;
+	padding: 2%;
+	display: inline-table;
+	font-family: 'JACKPORT_COLLEGE_NCV';
+}
+.col20 {
+	width: 24%;
+	display: inline-table;
+	font-family: 'JACKPORT_COLLEGE_NCV';
+	font-size:25px;
+}
+.col10 {
+	width: 10%;
+	display: inline-table;
+	font-family: 'JACKPORT_COLLEGE_NCV';
+}
+.nopadding {
+	padding: 0;
+}
+.pages {
+	text-align: center;
+	margin: 15px 10px 10px 10px;
+}
+.pages a {
+	font-size: 16px;
+	border: 1px solid #CCC;
+	text-decoration: none;
+	margin: 2px;
+	min-width: 50px;
+	display: inline-block;
+	background: #ECECEC;
+	padding: 3px;
+	font-family: 'JACKPORT_COLLEGE_NCV';
+	color: black;
+    font-size: 25px;
+}
+.pages a.current {
+	background: #FF7C7C;
+}
+h1.title a {
+	text-decoration: none;
+	color: #000;
+	font-family: 'JACKPORT_COLLEGE_NCV';
+    font-weight: normal;
+    font-style: normal;
+	text-align:center;
+	font-size:10vw;
+	margin: 0px;
+}
+h1 {
+	text-decoration: none;
+	color: #000;
+	font-family: 'JACKPORT_COLLEGE_NCV';
+    font-weight: normal;
+    font-style: normal;
+	text-align:center;
+	font-size:9.5vw;
+	margin: 0px;
+	position: relative;
+    bottom: 20px;
+	
+}
+h2 {
+	font-family: 'JACKPORT_COLLEGE_NCV';
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+}
+h3 {
+	font-family: 'JACKPORT_COLLEGE_NCV';
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+	margin: 0;
+}
+p {
+	font-family: 'JACKPORT_COLLEGE_NCV';
+	font-size:55px;
+	margin: 5px;
+}
+a {
+	font-family: 'JACKPORT_COLLEGE_NCV';
+	font-size:22px;
+}
+
+
+label {
+	font-family: 'JACKPORT_COLLEGE_NCV';
+	font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+}
