@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'JACKPORT REGULAR NCV';
+    font-family: 'JACKPORT_REGULAR_NCV';
     src: url('JACKPORTREGULARNCV.woff2') format('woff2'),
         url('JACKPORTREGULARNCV.woff') format('woff');
     font-weight: normal;
@@ -24,15 +24,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a281c', end
 }
 #game-board {
 	background: #FFF;
-	max-width: 600px;
+	max-width: 720px;
 	min-width: 360px;
 	margin: 0 auto;
 	padding: 15px;
 	border: 1px solid;
-    padding: 10px;
+  padding: 10px;
 	font-size: 65px;
-    box-shadow: 0px 1px 1px 1px #2a281c;
+  box-shadow: 0px 1px 1px 1px #2a281c;
 	font-family: 'JACKPORT_COLLEGE_NCV';
+  min-height: 700px;
 }
 #stats {
 	background: #ECECEC;
@@ -55,7 +56,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a281c', end
   padding-top: 15px;
   margin-top: 8px;
   position: relative;
-  bottom: 27px;
+  bottom: 42px;
 }
 #actions .btn-action {
 	background: #2a281c;
@@ -97,12 +98,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a281c', end
 	float: right;
 	border: none;
 	background: #2a281c;
-	padding: 7px 30px;
+	padding: 7px 5px;
 	margin: 5px;
 	cursor: pointer;
 	color: #FFF;
 	font-size: 30px;
-	font-family: 'JACKPORT REGULAR NCV';
+	font-family: 'JACKPORT_REGULAR_NCV';
 }
 .btn:hover {
 	background: #E63232;
@@ -111,11 +112,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a281c', end
 	float: none;
 	display: block;
 	text-align: center;
-	font-size: 3.8vw;
+	font-size: 1.7vw;
 	text-decoration: none;
 }
 .clear {
 	clear: both;
+}
+.col-md-4 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.col-md-6 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.col-md-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.copy {
+  font-family: 'JACKPORT_REGULAR_NCV'!important;
+  font-size: 22px!important;
+  text-align: center;
 }
 .col30 {
 	text-align: center;
@@ -129,12 +147,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a281c', end
 	width: 45%;
 	padding: 2%;
 	display: inline-table;
-	font-family: 'JACKPORT_COLLEGE_NCV';
+	font-family: 'JACKPORT_REGULAR_NCV';
 }
 .col20 {
-	width: 24%;
+	width: 23%;
 	display: inline-table;
-	font-family: 'JACKPORT_COLLEGE_NCV';
+	font-family: 'JACKPORT_REGULAR_NCV';
 	font-size:25px;
 }
 .col10 {
@@ -158,9 +176,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a281c', end
 	display: inline-block;
 	background: #ECECEC;
 	padding: 3px;
-	font-family: 'JACKPORT_COLLEGE_NCV';
+	font-family: 'JACKPORT_regular_NCV';
 	color: black;
-    font-size: 25px;
+  font-size: 25px;
 }
 .pages a.current {
 	background: #FF7C7C;
@@ -174,6 +192,9 @@ h1.title a {
 	text-align:center;
 	font-size:8.6vw;
 	margin: 0px;
+}
+form {
+    margin-bottom: 0!important;
 }
 h1 {
 	text-decoration: none;
@@ -202,7 +223,7 @@ h3 {
 	margin: 0;
 }
 p {
-	font-family: 'JACKPORT_COLLEGE_NCV';
+	font-family: 'JACKPORT_REGULAR_NCV';
 	font-size:55px;
 	margin: 5px;
 }
@@ -213,7 +234,7 @@ a {
 
 
 label {
-	font-family: 'JACKPORT_COLLEGE_NCV';
+	font-family: 'JACKPORT_REGULAR_NCV';
 	font-size: 30px;
     font-weight: 200;
     text-align: center;
@@ -226,8 +247,8 @@ label {
 } */
 img#mainImg {
   margin: 0;
-  width: 103.4%;
-  right: 1.7%;
+  width: 102.9%;
+  right: 1.4%;
   position: relative;
   bottom: 10px;
   box-shadow: 0px 2px 0px 0px;
